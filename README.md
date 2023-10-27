@@ -1,27 +1,5 @@
 # Assignment 2: Machine Learning
 
+About code and algorithm: The data, sourced from the TSLA.csv file, undergoes preprocessing where the 'Date' column is converted into a numerical format, called 'Date_ordinal'. After splitting the data into training and testing subsets, a Linear Regression model from the scikit-learn library is trained on the training data. The modelels accuracy is evaluated on the test data by calculating the Mean Squared Error and R^2 score. A function, predict_price, is implemented to forecast TESLAs stock price on any given future date based on this trained model. 
 
-You have 10 days to work on a machine learning algorithm.
-I want you to pick one of the following use cases and make a prediction algorithm using either regression or classification algorithms.
-
-Do the following:
-1. Pick one use case (defined below).
-2. Explore and research which algorithm would work best for this use case (regression or classification)
-3. Document your findings in a file (3-5 lines) on why you chose this algorithm.
-4. Train the algorithm using Python
-5. Keep the solution as simple as possible. We are not looking for the best machine learning algorithm. We are interested in seeing that you know how to work with machine learning.
-6. Publish the code on GitHub and send us the link
-
-
-You can pick one of the following use cases:
-
-1. Predict stock market price for TESLA.
-I want you to make a prediction algorithm which predicts the price of this stock on a specific date. Input will be date and output should be price of that stock (close value in the data file).
-You should also show the  prediction percentage score.
-Data file: TESLA.csv
-For updated csv file, please download the data from:
-https://finance.yahoo.com/quote/TSLA/history?p=TSLA
-
-2. Predict passenger data for Ruter
-Use the same data set given to you in assignment 1. I want you to make a prediction algorithm which predicts the number of passengers on a specific date for a specific bus (pick any one). Input should be date and output will be number of passengers
-You should also show the  prediction percentage score. Data file: Ruter_data.csv
+Why we chose this algorithm: The task is to predict the stock price of TESLA for a specific date. Since stock prices are continuous values, it is a regression problem. Regression algorithms predict continuous outputs, unlike classification algorithms which predict discrete categories. So given the nature of stock prices as continuous values, a regression algorithm, and particularly Linear Regression, is appropriate for this task. 
